@@ -39,7 +39,7 @@ body {
   background: #f09d51;
   color: #222;
   border: 1px solid #f09d51;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
   cursor: pointer;
 }
 .banner-btn:hover {
@@ -128,7 +128,7 @@ body {
   padding: 0.5rem 0.75rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
   transform: translateX(101%);
   cursor: pointer;
 }
@@ -144,7 +144,7 @@ body {
   display: block;
   width: 100%;
   min-height: 12rem;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 .product h3 {
   text-transform: capitalize;
@@ -159,5 +159,105 @@ body {
   color: #f09d51;
   text-align: center;
 }
+
+/* --------------- Cart ---------------- */
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 3;
+  background: #e7e2dd;
+  padding: 1.5rem;
+  transition: all 0.2s linear;
+  transform: translateX(100%);
+}
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s linear;
+  background: rgba(240, 157, 81, 0.5);
+  z-index: 2;
+  visibility: hidden;
+}
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+.cart-footer {
+  margin-top: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.showCart {
+  transform: translateX(0);
+}
+
+.transparentBcg {
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+.close-cart {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+/*---------- Cart Item -------------------- */
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cart-item img {
+  width: 75px;
+  height: 75px;
+}
+.cart-item h4 {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+.cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.item-amount {
+  text-align: center;
+}
+
+.remove-item {
+  color: grey;
+  cursor: pointer;
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  color: #f09d51;
+  cursor: pointer;
+}
+
+/*---------- End of Cart Item -------------------- */
 
 /*# sourceMappingURL=styles.css.map */
