@@ -1,0 +1,25 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
+  "scripts": {
+    "watch:sass":"sass --watch main.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buigabor/shopping-cart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buigabor/shopping-cart/issues"
+  },
+  "homepage": "https://github.com/buigabor/shopping-cart#readme"
+}
